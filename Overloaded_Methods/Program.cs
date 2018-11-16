@@ -10,6 +10,9 @@ namespace Overloaded_Methods
     {
         static void Main(string[] args)
         {
+            Card cardToCheck = new Card(Suit.Clubs, Value.Three);
+            bool doesItMatch = Card.DoesCardMatch(cardToCheck, Value.Three);
+            Console.WriteLine(doesItMatch);
         }
     }
 }
